@@ -1,0 +1,50 @@
+body {
+    margin: 20px;
+    text-align: right-center;
+    }
+  
+  table {
+    border: 3px solid #696969;
+    border-collapse: collapse;
+  }
+  
+  td {
+    border: 3px solid #696969;
+  }
+  
+  .class_title {
+    color: #000000;
+    background-color: #ccccff;
+  }
+  
+  span {
+    color: #0000FF;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .I10 {
+    background-color: #f0e68c;
+  }
+  
+  .I11 {
+    background-color: #7fffd4;
+    color: #000000;
+    font-style: italic;
+  }
+  
+  .I15 {
+    background-color: #ffaaff;
+    color: #000000 ;
+  }
+  
+  .group_title {
+    font-style: italic;
+    font-weight: 600;
+  }
+  
+  .group_item {
+    font-style: italic;
+    color: #000000;
+  }
+  
