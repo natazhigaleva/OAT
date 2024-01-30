@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="forms.css">
+    <title>Тег FORM</title>
+    </head>
+    <body>
+        <caption><strong>Пройдите авторизацию</strong></caption>
+        <form action="https//echo.top-academy.ru">
+            <p><strong>Логин</strong>
+            <input requaired class="authorize" maxlength="25" size="40" name="login"></p><br>
+            <p><strong>Пароль</strong>
+            <input required class="authorize" type="password" maxlenght="25" size="39" name="password"></p><br>
+            <input class="button" type="submit" value="Подтвердить"><br>
+        </form><br>
+
+        <form>
+            <caption><strong>Для удобства воспользуйтесь строкой поиска</strong></caption>
+            <input class="searching" type="search" name="Поиск" placeholder="Поиск по сайту"><br>
+            <input type="submit" value="Найти"><br>
+        </form><br>
+
+        <form>
+            <caption><strong>Введите количество товара</strong></caption><br>
+            <div class="rangeslider">
+                <input type="range" min="0" max="10" step="1" list="tickmarks">
+                    <datalist id="tickmarks">
+                        <option value="0 to 1">0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </datalist>
+                <output id="output" for="rangeInput">5</output>
+            </div>
+            <input type="button" value="Подтвердить"><br>
+        </form>            
+                 
+        <fieldset class="pay">
+            <legend><strong>Выберите способ оплаты</strong></legend>
+                <input type="radio" name="payment" value="cash">Наличными при получении<br>
+                <input type="radio" name="payment" value="card">Картой онлайн<br>
+                <input type="radio" name="payment" value="bank_transfer">Банковский перевод<br>
+                <input type="radio" name="payment" value="FPS">Через СБП<br>
+        </fieldset><br>
+        
+        <form>
+            <caption><strong>Выберите способ доставки</strong></caption><br>
+            <form action="select.php" method="post">
+                <select class="delivery">
+                    <option value="courier">Курьером до двери</option>
+                    <option value="pickup">Самовывоз из ПВЗ</option>
+                    <option value="post">Почта России</option>
+                    <option value="transport">Транспортная компания</option>
+                </select>
+                <input type="submit" name="confirm"><br>
+            </form>
+        </form>
+    </body>
+</html>

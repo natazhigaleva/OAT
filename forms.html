@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Тег Form</title>
+</head>
+<body>
+  <caption><strong>Пройдите авторизацию</strong></caption>
+  <form action="handler.php">
+   <p><strong>Логин:</strong> 
+    <input required class = "authorize" maxlength="25" size="40" name="login"></p>
+   <p><strong>Пароль:</strong> 
+    <input required class = "authorize" type="password" maxlength="25" size="39" name="password"></p>
+  </form><br>
+     <form>
+     	<input type="button" value="Подтвердить">
+     </form><br>
+     <form>
+        <caption><strong>Для удобства воспользуйтесь строкой поиска</strong></caption>
+        <input class = "searching" type="search" name="Поиск" placeholder="Поиск по сайту"> 
+   <input type="submit" value="Найти">
+     </form><br>
+     <form>
+       <caption><strong>Введите количество товара</strong></caption><br>
+       <div class="rangeslider">
+  		 <input type="range" min="0" max="10" value="5" step="1" list="tickmarks" 				               id="rangeInput" oninput="output.value = rangeInput.value">
+  		   <datalist id="tickmarks">
+              <option value="0 to 1">0</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+          </datalist>
+        <output id="output" for="rangeInput">5</output>
+      </div><br>
+       <form>
+   	<fieldset class = "pay">
+    <legend><strong>Выберите способ оплаты</strong></legend>
+      <p><input type="radio" name="payment" value="Наличными при получении"> Наличными при получении</p>
+      <p><input type="radio" name="payment" value="Онлайн по реквизитам"> Онлайн по реквизитам</p>
+      <p><input type="radio" name="payment" value="Банковский перевод"> Банковский перевод</p>
+      <p><input type="radio" name="payment" value="QIWI-кошелёк"> QIWI-кошелёк</p>    
+   	</fieldset>
+  </form><br>
+       <form>
+         <caption><strong>Выберите способ доставки</strong></caption><br>
+         <form action="select1.php" method="post">
+    <p><select  class = "delivery" size="2" multiple name="delivery">    
+    <option selected value="self">Самовывоз из ПВЗ</option>
+    <option value="transport">Транспортная компания</option>
+    <option value="post">Почта России</option>
+    <option value="courier">Курьером до двери</option>
+   </select></p>
+   <p><input type="submit" value="Отправить"></p>
+  </form>
+  <form class = register>
+     <caption><p class = "title_form">REGISTER</p></caption>
+     <hr>
+        <div class = "inputs">
+         <input type = "text" maxlenght = "50" size = "30" value = "FIRST NAME"><br>
+         <input type = "text" maxlenght = "50" size = "30" value = "FAMILY NAME"><br>
+         <input type = "select" maxlenght = "50" size = "30" value = "COUNTRY"><br>
+         <input type = "text" maxlenght = "50" size = "30" value = "CREATE PASSWORD"><br>
+         <input class = "button" type="submit" value="REGISTER">
+        </div>
+  </form>
+</body>
+</html>
