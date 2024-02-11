@@ -1,15 +1,29 @@
 body {
+    margin: 20px;
+    text-align: right-center;
+}
 
+.authorize {
+    border-radius: 5px;
+    background-color: #fffacd;
+}
+
+.searching {
+    border-radius: 5px;
+    background-color: #7fffd4;
 }
 
 .pay {
-    background-color: blanchedalmond;
+    width: 300px;
+    background-color: #e0ffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
-input {
-    background-color: aqua;
+.delivery {
+    width: 200px;
+    background-color: #ffb6c1;
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
 
-select {
-    background-color: rgb(143, 78, 103);
-}
